@@ -64,6 +64,49 @@ print(numero + 10)
 
 nombre = input("Ingrese su nombre: ")
 apellido= "Diaz"
-# print(f["Mi nombre es {nombre}"]) #f es para poder crear string que tengan incluidas variables, las variables van en corchetes
+print(f'Mi nombre es {nombre} {apellido}') #f es para poder crear string que tengan incluidas variables, las variables van en corchetes
 print("Mi nombre es {}".format(nombre))
-print("Mi nombre es {0} {1}").format(nombre, apellido)
+print("Mi nombre es {0} {1}".format(nombre, apellido))
+
+
+## control structures
+
+num = 5
+
+if num < 10:
+    if num < 8:
+        if num == 5:
+            print("yes")
+        else:
+            print("no")
+
+condition = True
+
+while condition:
+    print(num)
+    rta = input("Desea seguir? responde por si o por no ").lower()
+    if rta == "si":
+        condition = True
+    elif rta == "no":
+        condition = False
+    else:
+        break
+
+
+while num > 0:
+    print(num)
+    num -= 1 #para evitar el loop infinito
+
+for i in [0, 1, 2, 3]:
+    print(i)
+
+for i in range(10): #rango de 0 a 9
+    print(i)
+
+# range(start, stop, step) donde empieza, donde termina y de a cuantos saltos
+
+for i in range(0, 20, 2):
+    print(i)
+
+# break termina el bucle
+# continue continua el bucle
